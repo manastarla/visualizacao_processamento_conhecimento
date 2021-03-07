@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="../src/radar-chart.css">
+<head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .radar-chart .area {
+      fill-opacity: 0.7;
+    }
+    .radar-chart.focus .area {
+      fill-opacity: 0.3;
+    }
+    .radar-chart.focus .area.focused {
+      fill-opacity: 0.9;
+    }
+    .area.sgpe, .sgpe .circle {
+      fill: #FFD700;
+      stroke: none;
+    }
+    .area.ga, .ga .circle {
+      fill: #ADD8E6;
+      stroke: none;
+    }
+    .area.knn, .knn .circle {
+      fill: #e6adad;
+      stroke: none;
+    }
+  </style>
+
+  <script type="text/javascript" src="//d3js.org/d3.v3.js"></script>
+  <script type="text/javascript" src="../src/radar-chart.js"></script>
+
+  <script type="text/javascript">
+    RadarChart.defaultConfig.color = function() {};
+    RadarChart.defaultConfig.radius = 3;
+  </script>
+
+  <script type="text/javascript">
+    var data = [
+      {
+        className: 'sgpe', // optional can be used for styling
+        axes: [
+          {axis: "redução", value: 85.45}, 
+          {axis: "acurácia", value: 78.85}, 
+          {axis: "tempo (ds)", value: 6}
+        ]
+      },
+      {
+        className: 'ga',
+        axes: [
+          {axis: "redução", value: 72.11}, 
+          {axis: "acurácia", value: 76},  
+          {axis: "tempo (ds)", value: 60.9} 
+        ]
+      },
+      {
+        className: 'knn',
+        axes: [
+          {axis: "redução", value: 0},  
+          {axis: "acurácia", value: 77.53},  
+          {axis: "tempo (sd)", value: 40.9} 
+        ]
+      }
+    ];
+    function randomDataset() {
+      return data.map(function(d) {
+        return {
+          className: d.className,
+          axes: d.axes.map(function(axis) {
+            return {axis: axis.axis, value: Math.ceil(Math.random() * 10)};
+          })
+        };
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Radar Chart</h1>
+  
+  
+
+  <h2>Comparativo - Taxa de Redução, Acurácia e Tempo de Processamento</h2>
+  <h3></h3>
+  <div class="chart-container"></div>
+  <script type="text/javascript">
+    RadarChart.defaultConfig.levelTick = true;
+    RadarChart.draw(".chart-container", data);
+  </script>
+
+</body>
+</html>

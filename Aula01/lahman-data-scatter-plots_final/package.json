@@ -1,0 +1,14 @@
+{
+  "name": "@credmond/lahman-data-scatter-plots",
+  "main": "2e8d6ee4a0a4c214@104.js",
+  "version": "104.0.0",
+  "homepage": "https://observablehq.com/@credmond/lahman-data-scatter-plots",
+  "author": {
+    "name": "Charles Redmond",
+    "url": "https://observablehq.com/@credmond"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
