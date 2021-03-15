@@ -27,7 +27,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("http://localhost:8080/visualizacao_processamento_conhecimento/Aula02/data/MostPopularProgrammingLanguages2004to2020V3_test1.csv", function(data) {
+d3.csv("http://localhost:8080/visualizacao_processamento_conhecimento/Aula02/data/MostPopularProgrammingLanguages2004to2020V3_test9.csv", function(data) {
  
 
   // List of groups = header of the csv files
@@ -40,7 +40,7 @@ d3.csv("http://localhost:8080/visualizacao_processamento_conhecimento/Aula02/dat
 
   svg.append("g")
     .attr("transform", "translate(0," + height*1.01 + ")")
-    .call(d3.axisBottom(x).tickSize(-height*1.02).tickValues([2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]))
+    .call(d3.axisBottom(x).tickSize(-height*1.02).tickValues([2004,2008,2012,2016,2020]))
     .select(".domain").remove()
   // Customization
   svg.selectAll(".tick line").attr("stroke", "#b8b8b8")
