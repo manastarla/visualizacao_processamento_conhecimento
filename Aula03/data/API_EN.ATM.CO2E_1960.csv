@@ -7,7 +7,7 @@ Andorra,AND,
 Arab World,ARB,0.607447556753653
 United Arab Emirates,ARE,0.119035252872817
 Argentina,ARG,2.38334297035428
-Armenia,ARM,
+Armenia,ARM,   
 American Samoa,ASM,
 Antigua and Barbuda,ATG,0.677430677430677
 Australia,AUS,8.58293664258675
@@ -263,3 +263,4 @@ Yemen, Rep.,YEM,0.011038209113032
 South Africa,ZAF,5.72722136581395
 Zambia,ZMB,
 Zimbabwe,ZWE,
+Antarctica,ATA,0

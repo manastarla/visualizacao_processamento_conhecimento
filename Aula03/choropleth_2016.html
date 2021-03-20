@@ -28,8 +28,8 @@ var projection = d3.geoMercator()
 // Data and color scale
 var data = d3.map();
 var colorScale = d3.scaleLinear()
-.domain([0,6])
-.range(["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]);
+.domain([0,5,10,15,20,25])
+.range(d3.schemeReds[7]);
   
 
 // Load external data and boot
