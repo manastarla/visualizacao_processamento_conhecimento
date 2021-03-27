@@ -6,7 +6,7 @@ import define3 from "./e93997d5089d7165@2303.js";
 export default function define(runtime, observer) {
   const main = runtime.module();
   main.variable(observer()).define(["md"], function(md){return(
-md`# Dorling Cartogram`
+md`# Dorling Cartogram - CO2 emissions (metric tons per capita)`
 )});
   main.variable(observer("viewof show")).define("viewof show", ["checkbox"], function(checkbox){return(
 checkbox({
