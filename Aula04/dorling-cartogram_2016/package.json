@@ -1,0 +1,14 @@
+{
+  "name": "@neocartocnrs/dorling-cartogram",
+  "main": "3aa8424f8968705a@1352.js",
+  "version": "1352.0.0",
+  "homepage": "https://observablehq.com/@neocartocnrs/dorling-cartogram",
+  "author": {
+    "name": "neocarto",
+    "url": "https://observablehq.com/@neocartocnrs"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
