@@ -1,0 +1,14 @@
+{
+  "name": "@anna/customizing-sankey-diagram-for-text-compression-project",
+  "main": "da5e56c78d73a564@305.js",
+  "version": "305.0.0",
+  "homepage": "https://observablehq.com/@anna/customizing-sankey-diagram-for-text-compression-project",
+  "author": {
+    "name": "Anna Kawakami",
+    "url": "https://observablehq.com/@anna"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
