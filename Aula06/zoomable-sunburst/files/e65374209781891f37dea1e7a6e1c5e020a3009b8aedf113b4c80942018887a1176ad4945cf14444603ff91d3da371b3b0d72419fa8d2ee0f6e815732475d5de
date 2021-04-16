@@ -1,0 +1,63 @@
+{
+ "name": "flare",
+ "children": [
+  {
+
+     "name": "SGBD Relacionais",
+     "children": [
+      {"name": "Oracle", "value": 1274},
+      {"name": "MySql", "value": 1220},
+      {"name": "Microsoft SQL Server", "value": 1007},
+      {"name": "PostgreSQL", "value": 553},
+      {"name": "IBM Db2", "value": 157},
+      {"name": "SQLite", "value": 125},
+      {"name": "Microsoft Access", "value": 116},
+      {"name": "MariaDB", "value": 96},
+      {"name": "Hive", "value": 78},
+      {"name": "Microsoft Azure SQL Database", "value": 71},
+      {"name": "Teradata", "value": 70},
+      {"name": "SAP HANA", "value": 104},
+      {"name": "FileMaker", "value": 46}
+     ]
+    },
+    {
+     "name": "SGBD NoSQL",
+     "children": [
+        {
+            "name": "Documents",
+            "children": [
+                {"name": "MongoDB", "value": 469}
+            ]
+           },
+           {
+            "name": "Search Engine",
+            "children": [
+                {"name": "Solr", "value": 50},
+                {"name": "Elasticsearch", "value": 152},
+                {"name": "Splunk", "value": 88}
+            ]
+           },   
+           {
+            "name": "Wide Column",
+            "children": [
+                {"name": "HBase", "value": 44},
+                {"name": "Cassandra", "value": 114}
+            ]
+           }, 
+           {
+            "name": "Key Value",
+            "children": [
+                {"name": "Redis", "value": 155}
+            ]
+           },{
+            "name": "Graph",
+            "children": [
+                {"name": "Neo4j", "value": 51}
+            ]
+           }
+     ]
+    }
+   
+  
+ ]
+}
