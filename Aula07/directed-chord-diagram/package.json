@@ -1,0 +1,14 @@
+{
+  "name": "@d3/directed-chord-diagram",
+  "main": "1f239efed809e7c4@711.js",
+  "version": "711.0.0",
+  "homepage": "https://observablehq.com/@d3/directed-chord-diagram",
+  "author": {
+    "name": "D3",
+    "url": "https://observablehq.com/@d3"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
