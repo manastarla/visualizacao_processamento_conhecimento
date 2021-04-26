@@ -1,4 +1,4 @@
-# Directed Chord Diagram
+# Bipartite Chord Diagram
 
 https://observablehq.com/@d3/directed-chord-diagram@711
 
