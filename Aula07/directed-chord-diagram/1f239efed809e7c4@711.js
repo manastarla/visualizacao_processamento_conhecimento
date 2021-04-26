@@ -4,7 +4,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["debt.csv",new URL("./files/fb478ddc59d580061fc5a6eb927e428912052c96cd4b44bbc4f484ff016ce6aace0409cf0bb8f172f46c41a9d41518e44e972c2136fa66b7e220329b9fbbf233",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Directed Chord Diagram
+md`# Bipartite Chord Diagram
 
 This chord diagram, inspired by Bill Marsh’s [overview of the 2011 Euro crisis](http://archive.nytimes.com/www.nytimes.com/interactive/2011/10/23/sunday-review/an-overview-of-the-euro-crisis.html), visualizes debts between countries.`
 )});
@@ -35,9 +35,9 @@ This chord diagram, inspired by Bill Marsh’s [overview of the 2011 Euro crisis
 
   svg.append("g")
       .attr("font-family", "sans-serif")
-      .attr("font-size", 5)
+      .attr("font-size", 8)
     .selectAll("g")
-    .data(chords.groups)
+    .data(chords.groups)  
     .join("g")
       .call(g => g.append("path")
         .attr("d", arc)
@@ -47,7 +47,7 @@ This chord diagram, inspired by Bill Marsh’s [overview of the 2011 Euro crisis
         .attr("dy", -3)
       .append("textPath")
         .attr("xlink:href", textId.href)
-        .attr("startOffset", d => d.startAngle * outerRadius)
+        .attr("startOffset", d => (d.startAngle * outerRadius))
         .text(d => names[d.index]))
       .call(g => g.append("title")
         .text(d => `${names[d.index]}
